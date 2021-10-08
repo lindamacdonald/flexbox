@@ -1,0 +1,30 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	align-items: center;
+
+	width: 100vw;
+
+	background-color: aquamarine;
+	overflow: none;
+}
+.grow {
+	display: flex;
+	height: 100%;
+
+	align-items: center;
+	justify-content: left;
+	background-color: brown;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+	width: 100vw;
+	height: 900px;
+}

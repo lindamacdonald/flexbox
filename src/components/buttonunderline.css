@@ -1,0 +1,134 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.invertedOne {
+	background: linear-gradient(#030099 50%, #fff 0) 0 var(--d, 0) / 100% 200%
+			no-repeat,
+		linear-gradient(transparent 50%, #030099 0) 0 var(--d, 0) / 100% 200%
+			no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	transition: 0.8s;
+}
+.invertedOne:hover {
+	--d: 50%;
+}
+
+.invertedTwo {
+	background: linear-gradient(90deg, black 50%, #fff 0),
+		linear-gradient(-90deg, black 50%, #fff 0),
+		linear-gradient(90deg, transparent 50%, black 0),
+		linear-gradient(-90deg, transparent 50%, black 0);
+	background-repeat: no-repeat;
+	background-size: 200% 51%;
+	background-position: top left, bottom right;
+	-webkit-background-clip: text, text, padding-box, padding-box;
+	background-clip: text, text, padding-box, padding-box;
+	transition: 0.8s;
+}
+
+.invertedTwo:hover {
+	background-position: top right, bottom left;
+}
+.invertedThree {
+	background: linear-gradient(-135deg, black 50%, #fff 0) var(--d, 100%) 0/250%
+			100% no-repeat,
+		linear-gradient(-135deg, transparent 50%, black 0) var(--d, 100%) 0/250%
+			100% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	transition: 0.8s;
+}
+
+.invertedThree:hover {
+	--d: 50%;
+}
+
+.invertedFour {
+	background: linear-gradient(to bottom right, black 50%, #fff 50.1%) left/300%
+			300% no-repeat,
+		linear-gradient(to bottom right, transparent 50%, black 50.1%) left/300%
+			300% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	transition: 0.8s;
+}
+.invertedFour:hover {
+	background-position: center;
+}
+
+.invertedFive {
+	background: linear-gradient(black 0 0) right/100% 100% no-repeat,
+		linear-gradient(black, 40%, #fff 0 60%, black 0) left/0% 100% no-repeat,
+		linear-gradient(transparent 40%, black 0 60%, transparent 0) left/0% 100%
+			no-repeat;
+	-webkit-background-clip: text, text, padding-box;
+	background-clip: text, text, padding-box;
+	transition: 0.8s;
+}
+.invertedFive:hover {
+	background-size: 0% 100%, 100% 100%, 100% 100%;
+}
+
+.invertedSix {
+	background: linear-gradient(white 80%, black 0) calc(0 * 100% / 3)
+			var(--d, 100%),
+		linear-gradient(black 80%, transparent 0) calc(0 * 100% / 3) var(--d, 100%),
+		linear-gradient(white 60%, black 0) calc(1 * 100% / 3) var(--d, 100%),
+		linear-gradient(black 60%, transparent 0) calc(1 * 100% / 3) var(--d, 100%),
+		linear-gradient(white 40%, black 0) calc(2 * 100% / 3) var(--d, 100%),
+		linear-gradient(black 40%, transparent 0) calc(2 * 100% / 3) var(--d, 100%),
+		linear-gradient(white 20%, black 0) calc(3 * 100% / 3) var(--d, 100%),
+		linear-gradient(black 20%, transparent 0) calc(3 * 100% / 3) var(--d, 100%);
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	background-size: calc(100% / 4) 500%;
+	background-repeat: no-repeat;
+	transition: 0.8s;
+}
+.invertedSix:hover {
+	--d: 0%;
+}
+
+.invertedSeven {
+	background: linear-gradient(-45deg, black 40%, #fff 0 60%, black 0) right/300%
+			100% no-repeat,
+		linear-gradient(-45deg, transparent 40%, black 0 60%, transparent 0)
+			right/300% 100% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	transition: 0.8s;
+}
+.invertedSeven:hover {
+	background-position: left;
+}
+
+.invertedEight {
+	background: linear-gradient(-45deg, black 40%, #fff 0 60%, black 0) right/300%
+			100% no-repeat,
+		linear-gradient(-45deg, transparent 40%, black 0 60%, transparent 0)
+			right/300% 100% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+}
+.invertedEight:hover {
+	background-position: left;
+	transition: 0.8s;
+}
+
+div[class] {
+	color: transparent;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 40px;
+	font-family: sans-serif;
+	margin: 25px;
+	padding: 8px;
+	cursor: pointer;
+}
+
+body {
+	text-align: center;
+}

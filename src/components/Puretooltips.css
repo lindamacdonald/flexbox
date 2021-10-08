@@ -1,0 +1,234 @@
+.container {
+	background: #eeeeee;
+	width: 100%;
+	height: 600px;
+}
+/*just create a beautiful button,this is a sample;*/
+.btn {
+	width: 10rem;
+	height: 2rem;
+	background: #642efe;
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+	border-radius: 7px;
+	padding: 8px 20px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.tooltip {
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px dotted #666;
+	text-align: left;
+	/*i used these margins to position tooltip around the conatainer so dont include them*/
+	margin-top: 150px;
+	margin-left: 100px;
+}
+
+.tooltip .tooltip-top {
+	min-width: 200px;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	padding: 10px 20px;
+	/*all of the tooltips tweaks the margins to fit you*/
+	margin-top: 10px;
+	color: #444444;
+	background-color: #121212;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltip-top {
+	visibility: visible;
+	opacity: 1;
+}
+.tooltip:focus .tooltip-top {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip .tooltip-top i {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12px;
+	width: 24px;
+	height: 12px;
+	overflow: hidden;
+}
+
+.tooltip .tooltip-top i::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background-color: #eeeeee;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+/*ends here and you can tweak it to fit your needs*/
+
+/*right tolltip*/
+
+.tooltip .tooltip-right {
+	min-width: 200px;
+	top: 50%;
+	left: 100%;
+	margin-left: 20px;
+	transform: translate(0, -50%);
+	padding: 10px 20px;
+	color: #444444;
+	background-color: #eeeeee;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltip-right {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip .tooltip-right i {
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -12px;
+	width: 12px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.tooltip .tooltip-right i::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+	top: 50%;
+	transform: translate(50%, -50%) rotate(-45deg);
+	background-color: #eeeeee;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+/*end right*/
+
+/*start left tip*/
+.tooltip .tooltip-left {
+	min-width: 200px;
+	top: 50%;
+	right: 100%;
+	margin-right: 20px;
+	transform: translate(0, -50%);
+	padding: 10px 20px;
+	color: #444444;
+	background-color: #eeeeee;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltip-left {
+	visibility: visible;
+	opacity: 1;
+}
+.tooltip:focus .tooltip-left {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip .tooltip-left i {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -12px;
+	width: 12px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.tooltip .tooltip-left i::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	background-color: #eeeeee;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+/*end left*/
+
+/*start bottom*/
+
+.tooltip .tooltip-bottom {
+	min-width: 200px;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 10px 20px;
+	color: #444444;
+	background-color: #eeeeee;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltip-bottom {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip .tooltip-bottom i {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -12px;
+	width: 24px;
+	height: 12px;
+	overflow: hidden;
+}
+
+.tooltip .tooltip-bottom i::after {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(45deg);
+	background-color: #eeeeee;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
